@@ -1,0 +1,135 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    transition: background-color 0.5s, color 0.5s;
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  .dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+
+  .navbar {
+    transition: background-color 0.5s;
+  }
+
+  .dark-mode .navbar {
+    background-color: #1f1f1f !important;
+  }
+
+  .hero {
+    position: relative;
+    height: 100vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    background: linear-gradient(120deg, rgb(71, 173, 213) ,rgb(112, 175, 250));
+  }
+
+
+
+  .hero-content {
+    z-index: 2;
+  }
+
+  .animated-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  .animated-text span {
+    display: none;
+  }
+
+  .animated-text span.active {
+    display: inline-block;
+    animation: fadeInOut 3s ease-in-out;
+  }
+
+  @keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+
+  body.dark-mode .animated-text { color: white; }
+  body:not(.dark-mode) .animated-text { color: black; }
+
+  .skills-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: background-color 0.5s, color 0.5s;
+  }
+
+  .skills-box:hover {
+    transform: scale(1.05);
+  }
+
+  .dark-mode .skills-box {
+    background-color: #2a2a2a;
+    color: white;
+  }
+
+  .footer {
+    background-color: #111;
+    color: white;
+    padding: 20px 0;
+  }
+
+  .dark-mode .footer {
+    background-color: #000;
+    color: #ccc;
+  }
+
+  .form-control, .form-control:focus, textarea {
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .form-control::placeholder, textarea::placeholder {
+    color: #6c757d;
+    transition: color 0.3s;
+  }
+
+  .dark-mode .form-control, .dark-mode textarea {
+    background-color: #2a2a2a;
+    color: #fff;
+    border: 1px solid #555;
+  }
+
+  .dark-mode .form-control::placeholder, .dark-mode textarea::placeholder {
+    color: #aaa;
+  }
+
+  .project-text {
+    color: #6c757d;
+    transition: color 0.3s;
+  }
+
+  .dark-mode .project-text {
+    color: #bbb;
+  }
+
+  .dark-toggle {
+    cursor: pointer;
+    font-size: 1.5rem;
+    border: none;
+    background: transparent;
+    color: white;
+  }
+
+  .dark-mode .bg-light {
+    background-color: #1e1e1e !important;
+  }
+ .dark-mode .hero{
+   background : linear-gradient(120deg,rgb(4, 4, 54),rgb(6, 139, 139))
+ }
